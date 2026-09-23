@@ -1,0 +1,31 @@
+{
+  "name": "@dsh-external/dsh-genui-untagged-fence",
+  "description": "DSH web client plugin: 让漏写 dsh-ui 标签的界面围栏照样渲染——扫描助手回复里没带语言标签、正文却是界面规格的代码块，补上 dsh-ui 标签，交给 @changfenhuang/dsh-genui 的 DOM 通道接管。不改 DSH 源码，也不改 dsh-genui 的代码，卸载即恢复原样。",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "cordis": ">=4.0.0-0"
+  },
+  "license": "MIT"
+}

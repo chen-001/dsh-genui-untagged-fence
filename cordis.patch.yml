@@ -1,0 +1,6 @@
+# dsh bundle patch：把本插件插进 profile 的层叠配置。
+# 纯客户端插件（宿主半边是空壳），bundle 机制要求每个 bundles 条目都声明
+# dsh.bundle.patch，所以这里给自己写一条 insert。
+- insert:
+    - id: dsh-genui-untagged-fence
+      name: '@dsh-external/dsh-genui-untagged-fence'
