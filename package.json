@@ -1,7 +1,7 @@
 {
   "name": "@dsh-external/dsh-genui-untagged-fence",
-  "description": "DSH web client plugin: 让漏写 dsh-ui 标签的界面围栏照样渲染——扫描助手回复里没带语言标签、正文却是界面规格的代码块，补上 dsh-ui 标签，交给 @changfenhuang/dsh-genui 的 DOM 通道接管。不改 DSH 源码，也不改 dsh-genui 的代码，卸载即恢复原样。",
-  "version": "0.1.0",
+  "description": "DSH web client plugin: 让模型漏写围栏标记的界面规格照样渲染——扫描助手回复里没带语言标签、正文却是界面规格的代码块（补一个隐藏的 dsh-ui 标签），以及整段就是界面规格的纯文本段落（造一个合成代码块），都交给 @changfenhuang/dsh-genui 的 DOM 通道接管。不改 DSH 源码，也不改 dsh-genui 的代码，卸载即恢复原样。",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "main": "lib/index.js",
